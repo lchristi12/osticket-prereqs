@@ -154,97 +154,114 @@ Install osTicket v1.15.8--> From the “osTicket-Installation-Files” folder, u
 
 Right click osTicket-v1.15.8.zip and click extract all and click extract, wait until it is finished--> open the osTicket-v1.15.8 in the osTicket-Installation-Files folder and there should be 2 folders, scripts and upload
 
-Copy the “upload” folder into “c:\inetpub\wwwroot”--> Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”--> right click file explorer--> Windows (C:)--> inetpub--> wwwroot--> copy and drag the upload folder from osTicket-v1.15.8 into the wwwroot and rename it to osTicket exactly by by right clicking and click rename
+Copy the “upload” folder into “c:\inetpub\wwwroot”--> Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”--> right click file explorer--> Windows (C:)--> inetpub--> wwwroot--> copy and drag the upload folder from osTicket-v1.15.8 into the wwwroot and rename it to osTicket exactly by by right clicking and click rename--> After, go back to IIS to stop and start the server like we did perviously
 
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="2126" height="1214" alt="Annotation 2025-08-31 033244" src="https://github.com/user-attachments/assets/cbd67085-fa2a-4fae-a09d-43b7796c328e" />
+<img width="1318" height="1212" alt="Annotation 2025-08-31 033414" src="https://github.com/user-attachments/assets/d0ddcc78-c412-4750-b9f7-7490fabca2d5" />
+
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we are going to attempt to load the OS Ticket site--> On IIS manager, go to sites--> default--> osTicket--> click on browse on the right hand side and the OS Ticket site should appear in the web browser.
 </p>
 <br />
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="2108" height="1522" alt="Annotation 2025-08-31 034156" src="https://github.com/user-attachments/assets/0f99b293-ff44-4ec3-8041-96609d6518d8" />
+<img width="1308" height="1144" alt="Annotation 2025-08-31 034356" src="https://github.com/user-attachments/assets/7de44245-3bff-494a-b45a-74d7a2ede03a" />
+
+ 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Note that some extensions are not enabled--> On IIS manager, go to sites--> default--> osTicket--> PHP manager--> click on enable or disable an extention--> enable the following extensions: php_imap.dll, php_intl.dll, and php_opcache.dll--> Refresh the osTicket site in your browser, observe the changes.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1700" height="1324" alt="Annotation 2025-08-31 034943" src="https://github.com/user-attachments/assets/4dcc8f45-3b82-46af-b38d-082322b631f4" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Rename: ost-config.php--> Windows C:--> inetpub--> wwwroot--> osTicket--> include--> ost-sampleconfig.php, rename this to ost-config.php (DO NO MESS THIS PART UP)
+
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1526" height="996" alt="Annotation 2025-08-31 035200" src="https://github.com/user-attachments/assets/d16ad08a-85ce-40c0-91d5-753611138cf8" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Assign Permissions: ost-config.php--> right click, properties--> security--> advanced--> disable inheritance--> remove all inherited permissions from this object.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1702" height="998" alt="Annotation 2025-08-31 035551" src="https://github.com/user-attachments/assets/10afac63-096e-4ab7-858b-ea01e469548d" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we are going to add new permissions--> select a principle--> for the sake of this tutorial, type "everyone" in the box and click ok--> check full control and click okay--> Click apply and ok
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="822" height="1220" alt="Annotation 2025-08-31 035826" src="https://github.com/user-attachments/assets/95f5986c-3026-4360-831a-f56cecb5300e" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Go back to the OS Ticket site and click continue--> fill in the information--> Helpdesk name, create a name--> type a random email for the sake of the tutorial--> Username, lets use adminuser and password, Password1 for this tutorial--> next install HeidiSQL
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1192" height="886" alt="Annotation 2025-08-31 040331" src="https://github.com/user-attachments/assets/cf8523d9-47ef-47fc-8a4f-d9afb97e7d6e" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+From the “osTicket-Installation-Files” folder--> download HeidiSQL, https://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe--> click agree and click next until you get to the install button and click install and when it is done, click finish.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1372" height="960" alt="Annotation 2025-08-31 040644" src="https://github.com/user-attachments/assets/9e76252f-c2a6-46d5-8b04-b72dc315c5da" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we are going to set up a database for OS Ticket, HeidiSQL should be opened--> click new--> user root, password, root from earlier on and click open
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="2094" height="1182" alt="Annotation 2025-08-31 041008" src="https://github.com/user-attachments/assets/d5bd7db1-fd3f-46a5-9513-1b619c5023df" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Creating a database--> right click unnamed--> create new--> databased--> Type for the name, osTicket exactly--> click ok and the database has been created.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="556" height="370" alt="Annotation 2025-08-31 041211" src="https://github.com/user-attachments/assets/6b1238c7-ef35-40d4-af8c-9321922e85c3" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Finish setting up OS Ticket--> MySQL database, type osTicket--> username, root, password, root--> click install now.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1098" height="848" alt="Annotation 2025-08-31 041323" src="https://github.com/user-attachments/assets/37431c56-2f57-4188-a13f-3b06d5b66e9c" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+You have successfully installed OS Ticket.
 </p>
 <br />
 
