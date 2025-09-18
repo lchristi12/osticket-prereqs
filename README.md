@@ -144,10 +144,19 @@ Click start and type IIS and click run as admistrator--> Register PHP from withi
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1132" height="940" alt="Annotation 2025-08-31 032011" src="https://github.com/user-attachments/assets/c5def4fd-443c-41cd-b216-c317cb802c72" />
+<img width="2048" height="1528" alt="Annotation 2025-08-31 032604" src="https://github.com/user-attachments/assets/78c44a35-20f4-4f3d-8319-7e4d803abd4f" />
+<img width="1746" height="714" alt="Annotation 2025-08-31 032814" src="https://github.com/user-attachments/assets/1e6d0578-141f-4e1e-ad5f-b5591a7ba90f" />
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install osTicket v1.15.8--> From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
+
+Right click osTicket-v1.15.8.zip and click extract all and click extract, wait until it is finished--> open the osTicket-v1.15.8 in the osTicket-Installation-Files folder and there should be 2 folders, scripts and upload
+
+Copy the “upload” folder into “c:\inetpub\wwwroot”--> Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”--> right click file explorer--> Windows (C:)--> inetpub--> wwwroot--> copy and drag the upload folder from osTicket-v1.15.8 into the wwwroot and rename it to osTicket exactly by by right clicking and click rename
+
+
 </p>
 <br />
 
