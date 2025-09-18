@@ -98,7 +98,7 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module (re
 <p>
 Create the directory C:\PHP--> right click file explorer on desktop (manilla folder)--> Windows (C:)--> right click and click new--> name it PHP
   
-  From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder--> Go to the “osTicket-Installation-Files” folder and click php-7.3.8-nts-Win32-VC15-x86.zip--> right click and click extract all--> click browse--> go to Windows (C:)--> select the PHP folder we created--> click extract
+  From the “osTicket-Installation-Files” folder--> unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder--> Go to the “osTicket-Installation-Files” folder and click php-7.3.8-nts-Win32-VC15-x86.zip--> right click and click extract all--> click browse--> go to Windows (C:)--> select the PHP folder we created--> click extract
 
 
 </p>
@@ -116,12 +116,13 @@ From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.-->
 
 <p>
 <img width="996" height="752" alt="Annotation 2025-08-31 025434" src="https://github.com/user-attachments/assets/bf388eea-8a61-464d-a575-2fddba143e44" />
+<img width="680" height="526" alt="Screenshot 2025-08-30 225226" src="https://github.com/user-attachments/assets/a537f816-b476-43c0-8f0c-704b368a8d3c" />
 
 </p>
 <p>
 From the “osTicket-Installation-Files” folder double click, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)--> click next--> check box and click next--> choose typical for setup and click install, say yes to pop up. 
   
-  After, we are going to launch the MYDQL configuration wizard--> click finished and next and yes to the pop up and next again--> click standard configuration--> click next until you get the modify security settings--> DO NOT MESS THIS PART UP. For the sake of the tutorial, for the password type "root" both times--> click next and execute. Installation should be complete.
+  After, we are going to launch the MYSQL configuration wizard--> click finished and next and yes to the pop up and next again--> click standard configuration--> click next until you get the modify security settings--> DO NOT MESS THIS PART UP. For the sake of the tutorial, for the password type "root" both times--> click next and execute. Installation should be complete.
 
 </p>
 <br />
@@ -167,12 +168,12 @@ Copy the “upload” folder into “c:\inetpub\wwwroot”--> Within “c:\inetp
 
 </p>
 <p>
-Next we are going to attempt to load the OS Ticket site--> On IIS manager, go to sites--> default--> osTicket--> click on browse on the right hand side and the OS Ticket site should appear in the web browser.
+Next we are going to attempt to load the OS Ticket site--> On IIS manager, go to sites--> default--> osTicket--> click on "browse" on the right hand side and the OS Ticket site should appear in the web browser.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 <img width="2108" height="1522" alt="Annotation 2025-08-31 034156" src="https://github.com/user-attachments/assets/0f99b293-ff44-4ec3-8041-96609d6518d8" />
 <img width="1308" height="1144" alt="Annotation 2025-08-31 034356" src="https://github.com/user-attachments/assets/7de44245-3bff-494a-b45a-74d7a2ede03a" />
 
